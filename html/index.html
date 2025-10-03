@@ -3,104 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ecommerce</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script>
-        function loginUser(event) {
-            event.preventDefault();
-            var user = document.getElementById('login-user').value;
-            var pass = document.getElementById('login-pass').value;
-            var msg = document.getElementById('login-msg');
-            if(user.length < 3) {
-                msg.textContent = 'Usuario muy corto';
-                msg.style.color = '#ff5858';
-                return false;
-            }
-            if(pass.length < 5) {
-                msg.textContent = 'Contraseña muy corta';
-                msg.style.color = '#ff5858';
-                return false;
-            }
-            msg.textContent = '¡Bienvenido, ' + user + '!';
-            msg.style.color = '#6366f1';
-            return false;
-        }
-        function goToWhatsapp() {
-            window.open('https://wa.me/51970497862','_blank');
-        }
-    </script>
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="Logo ShopMax" />
-            ShopMax
-        </div>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <form class="navbar-login" onsubmit="return loginUser(event)">
-            <input type="text" id="login-user" name="login-user" placeholder="Usuario" required autocomplete="username" />
-            <input type="password" id="login-pass" name="login-pass" placeholder="Contraseña" required autocomplete="current-password" />
-            <button class="login-btn" type="submit">Entrar</button>
-        </form>
-        <div id="login-msg" style="margin-left:1rem;"></div>
-    </nav>
-    <div class="main-content">
-        <div class="info-section">
-            <div>
-                <h2>Sobre ShopMax</h2>
-                <p>ShopMax es tu ecommerce de confianza, con productos de tecnología, gadgets y accesorios de alta calidad. Ofrecemos envíos rápidos, atención personalizada y ofertas exclusivas para nuestros clientes.</p>
-            </div>
-            <img class="info-img" src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" alt="Sobre ShopMax" />
-        </div>
-        <section class="products" id="productos">
-            <div class="product-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Auriculares" />
-                <div class="product-title">Auriculares Bluetooth</div>
-                <div class="product-price">$49.99</div>
-                <div class="product-desc">Sonido envolvente, batería de larga duración y diseño ergonómico.</div>
-                <button class="product-btn">Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Smartwatch" />
-                <div class="product-title">Smartwatch Pro</div>
-                <div class="product-price">$89.99</div>
-                <div class="product-desc">Monitorea tu salud y recibe notificaciones al instante.</div>
-                <button class="product-btn">Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="Cámara" />
-                <div class="product-title">Cámara HD</div>
-                <div class="product-price">$120.00</div>
-                <div class="product-desc">Captura tus mejores momentos con calidad profesional.</div>
-                <button class="product-btn">Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Laptop" />
-                <div class="product-title">Laptop Ultra</div>
-                <div class="product-price">$799.00</div>
-                <div class="product-desc">Potencia y portabilidad para tu día a día.</div>
-                <button class="product-btn">Agregar al carrito</button>
-            </div>
-        </section>
-    </div>
-    <div class="support-section">
-        <div>
-            <h3>¿Necesitas ayuda?</h3>
-            <p>Contáctanos por WhatsApp y te atenderemos al instante.</p>
-            <button class="support-btn" onclick="goToWhatsapp()">Soporte por WhatsApp</button>
-        </div>
-        <img class="support-img" src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" alt="Soporte WhatsApp" />
-    </div>
-    <footer>
-        <div>ShopMax &copy; 2025. Todos los derechos reservados.</div>
-        <div>Contacto: contacto@shopmax.com | Tel: +51 970 497 862</div>
-        <div>Política de privacidad | Términos y condiciones</div>
-        <div>Av. Principal 123, Lima, Perú</div>
-    </footer>
+    <h1>Pagina principal Nueva</h1>
+    <p>Esta es la pagina principal</p>
+
+    Soy una caja
+    <div class="caja" id="caja"></div>
+
+    <button onclick="CambiarColor()">Cambiar Color</button>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
